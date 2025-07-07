@@ -1,0 +1,57 @@
+:root {
+  --gold: #D4AF37;
+  --navy: #1c1f2a;
+  --white: #ffffff;
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+/* General Layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+text-decoration: none;
+color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 64px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 1px;
+}
+
+.text-navy-800 {
+  color: var(--navy);
+}
+
+
+
+/Billboard-pic/
+
+.pic-title {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.pic-subtitle {
+  font-size: 1.2rem;
+  color: white;
+}
+
