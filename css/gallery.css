@@ -1,0 +1,36 @@
+.gallery-box {
+  margin: 5x;
+  border: 1px solid #ddd;
+  float: left;
+  width: 250px;
+    height: 400px;
+  transition: 0.3s;
+  background-color: #333333;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.gallery-box:hover {
+  transform: scale(1.03);
+}
+
+.gallery-box img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover; 
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.desc {
+  padding: 10px;
+  color: #D4AF37;
+  font-size: 14px;
+  text-align: left;
+}
+
+.star{
+  color: #D4AF37;
+font-size: 20px;
+
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>All Poducts</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dropdown.css">
+  <link rel="stylesheet" href="css/topbtn.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/image.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/blog.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .home-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .button {
+      border: none;
+      color: black;
+      padding: 15px 50px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 12px 2px;
+      cursor: pointer;
+      background-color: #d4af37;
+      letter-spacing: 5px;
+      word-spacing: 10px;
+      transition: all 0.3s ease;
+    }
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px white;
+    }
+    .text-white {
+      color: white;
+    }
+
+    .text-justify {
+      text-align: justify;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-bar"></div>
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 8px">
+        <img src="picture/logo.png" alt="Logo" style="width:72px; height:72px; border-radius:50%; object-fit:cover;">
+        MEN'S <span>PRIDE</span>
+      </a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn"><a href="products.html" class="nav-link">Products</a></button>
+              <div class="dropdown-content">
+                <a href="watches.html">Watches</a>
+                <a href="rings.html">Rings</a>
+                <a href="belts.html">Belts</a>
+                <a href="all-products.html">All Products</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="sales.html" class="nav-link">Sales</a></li>
+          <li><a href="location.html" class="nav-link">Locations</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li><a href="group.html" class="nav-link">Group</a></li>
+        </ul>
+      </nav>
+      <div class="nav-icons">
+        <a href="login.html" class="nav-icon"><i class="fa fa-user"></i></a>
+        <a href="cart.html" class="nav-icon"><i class="fa fa-shopping-cart"></i></a>
+      </div>
+    </div>
+  </header>
+
+    <div class="home-content">
+<form action="mailto:kmahikal990@gmail.com" method="post" enctype="text/plain">
+    <label>Name:</label>
+    <br><input type="text" name="name">
+    <p>
+    <label>Address:</label>
+    <br><input type="text" name="address">
+    <p>
+    <label>Gender:</label>
+    <br><input type="radio" name="gender" value="male"> Male
+    <br><input type="radio" name="gender" value="female"> Female
+    <p>
+    <label>Favourite Accessories:</label>
+    <br><input type="checkbox" name="watch" value="watch"> Watch
+    <br><input type="checkbox" name="ring" value="ring"> Ring
+    <br><input type="checkbox" name="belt" value="belt"> Belt
+    <br><input type="checkbox" name="all-in-above" value="all-in-above"> All in above
+
+    <p>
+    <label>Comment:</label>
+    <br><textarea rows="5" cols="50" name="comment"></textarea>
+    </br>
+    <p>
+    <input type="submit" class="button" value="Send">
+    <input type="reset" class="button" value="Reset">
+</form>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            MEN'S <span>PRIDE</span>
+          </div>
+          <p class="footer-about">
+            Redefining men's accessories with premium quality watches, bracelets, and
+            belts for the modern gentleman.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="team-social-link"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="team-social-link"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="products.html" class="footer-link">Products</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-title">Contact Us</h3>
+          <div class="contact-item"><i class="fa fa-map-marker"></i> 765 Fashion Street, Bangi, Malaysia</div>
+          <div class="contact-item"><i class="fa fa-phone"></i> +254 123 456 789</div>
+          <div class="contact-item"><i class="fa fa-envelope-o"></i> info@menspride.com</div>
+          <div class="contact-item"><i style="font-size: 15px" class="fa">&#xf017;</i> Mon-Fri: 9am - 6pm</div>
+        </div>
+        <div>
+          <h3 class="footer-title">Help & Info</h3>
+          <ul class="footer-links">
+            <li><a href="faq.html" class="footer-link" style="font-size: 24px">FAQ</a></li>
+          </ul>
+        </div>
+    </div>
+</footer>
+
+  <a href="#" class="back-to-top">&#129145;</a>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const backToTop = document.querySelector(".back-to-top");
+
+      if (backToTop) {
+        window.addEventListener("scroll", () => {
+          backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+        });
+
+        backToTop.addEventListener("click", (e) => {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

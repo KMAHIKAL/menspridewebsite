@@ -1,0 +1,11 @@
+
+.pic-title {
+  font-size: 3rem;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.pic-subtitle {
+  font-size: 1.2rem;
+  color: var(--white);
+}

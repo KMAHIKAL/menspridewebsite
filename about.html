@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dropdown.css">
+  <link rel="stylesheet" href="css/topbtn.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/board.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .billboard-pic {
+      background: linear-gradient(rgba(28, 31, 42, 0.7), rgba(28, 31, 42, 0.7)), url('picture/2.png');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .about-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .team-card {
+      background: #333333;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: var(--transition);
+      border-radius: 1%;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .team-img-container {
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .team-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1%;
+    }
+
+    .team-content {
+      padding: 1.5rem;
+      color: white;
+    }
+
+    .team-name {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: white;
+    }
+
+    .team-position {
+      color: #D4AF37;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .team-social {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .team-social-link {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transition: var(--transition);
+      text-decoration: none;
+    }
+
+    .team-social-link:hover {
+      background: #D4AF37;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .values-grid1 {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      gap: 7rem;
+    }
+
+    .value-card {
+      background: #333333;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      transition: var(--transition);
+      border-radius: 2%;
+    }
+
+    .value-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .value-icon {
+      width: 60px;
+      height: 60px;
+      background: white;
+      color: #D4AF37;
+      font-size: 1.5rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+    }
+
+    .value-title {
+      margin-bottom: 1rem;
+      color: #D4AF37;
+    }
+
+    .text-white {
+      color: white;
+    }
+
+    .text-justify {
+      text-align: justify;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-bar"></div>
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo" style="display:flex; align-items:center; gap:8px;">
+        <img src="picture/logo.png" alt="Logo" style="width:72px; height:72px; border-radius:50%; object-fit:cover;">
+        MEN'S <span>PRIDE</span>
+      </a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About Us</a></li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn"><a href="products.html" class="nav-link">Products</a></button>
+              <div class="dropdown-content">
+                <a href="watches.html">Watches</a>
+                <a href="rings.html">Rings</a>
+                <a href="belts.html">Belts</a>
+                <a href="all-products.html">All Products</a>
+              </div>
+            </div>
+          </li>
+          <li><a href="sales.html" class="nav-link">Sales</a></li>
+          <li><a href="location.html" class="nav-link">Locations</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="group.html" class="nav-link">Group</a></li>
+        </ul>
+      </nav>
+      <div class="nav-icons">
+        <a href="login.html" class="nav-icon"><i class="fa fa-user"></i></a>
+        <a href="cart.html" class="nav-icon"><i class="fa fa-shopping-cart"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="billboard-pic">
+    <div class="container">
+      <h1 class="pic-title">About MEN'S PRIDE</h1>
+      <p class="pic-subtitle">Our journey to redefine men's accessories</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-content">
+        <h2 class="section-title">Our Story</h2>
+        <p class="text-justify">Four budding web developers with a passion for style simplicity and self-expression founded Men's Pride from a shared frustration of a lack of dedicated places for men's fashion accessories. During our training in the IML254 course, we have come to realize that, while men's fashion keeps changing, accessories are the least marketed segment in online stores.</p>
+        <p class="text-justify">The change would have to come from us. </p>
+        <p class="text-justify">Men's Pride was created with a broad objective to allow men to very confidently express themselves with high-budget and beautifully curated accessories. The platform is not just another e-commerce site but rather a digital space where style meets identity. </p>
+        <p class="text-justify">For us, it is about the stories behind every bracelet, every watch, and every belt-telling stories of culture, and it's never about showing off; it's about pride. Every pixel, every product represents an allegiance to elevate men's fashion-making bold, classy choices available for all.</p>
+        <center><img src="picture/u1.png" class="container"></center>
+        <h2 class="section-title">Our Audience</h2>
+        <p class="text-justify">We targeted a very thin market segment of 18-45-year-old men, often considered a small and fringe category by the mainstream fashion e-commerce. Men apparently fare well on the women-oriented platforms; errors in user interface aesthetics and product suggestions are exclusively male.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-gray-100">
+    <div class="container">
+      <h2 class="section-title">Our Vision & Mission</h2>
+      <div class="values-grid1">
+        <div class="value-card">
+          <div class="value-icon"><i class="fa fa-clipboard"></i></div>
+          <h3 class="value-title">Vision</h3>
+          <p class="text-white">To be the world's largest online destination for men to experience accessories while redefining how men experience and express fashion through quality, individuality, and effortless sophistication.</p>
+
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="fa fa-bullseye"></i></div>
+          <h3 class="value-title">Mission</h3>
+          <p class="text-white">To be witnessed in offering personally curated high-quality men's accessories that reflect style, function, and personal expression. </p>
+          <p class="text-white">To simplify the online shopping journey with an interface that is design-user-friendly, has clear navigation, and seamless checkout.  </p>
+          <p class="text-white">Empower men of all ages to feel confident and stylish, professionally and casually, in every facet of life. </p>
+          <p class="text-white">To continuously upgrade our digital platform with the latest web development techniques and responsive design for an engaging and accessible experience.</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-gray-100">
+    <div class="container">
+      <h2 class="section-title">Our Core Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon"><i class="fa fa-eercast"></i></div>
+          <h3 class="value-title">Quality</h3>
+          <p class="text-white">We never compromise on materials or craftsmanship. Each product undergoes rigorous quality checks before reaching our customers.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="fa fa-paint-brush"></i></div>
+          <h3 class="value-title">Design</h3>
+          <p class="text-white">We believe in timeless design that transcends trends. Our accessories are crafted to be relevant today and for years to come.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon"><i class="fa fa-id-card"></i></div>
+          <h3 class="value-title">Service</h3>
+          <p class="text-white">Customer satisfaction is paramount. We're dedicated to providing exceptional service at every touchpoint.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-img-container">
+            <img src="picture/p1.jpg" alt="Michael Reed" class="team-img">
+          </div>
+          <div class="team-content">
+            <h3 class="team-name">Khari</h3>
+            <p class="team-position">Founder & CEO</p>
+            <p>Khairi's passion for quality accessories led him to establish MEN'S PRIDE after 15 years in the luxury fashion industry.</p>
+            <div class="team-social">
+              <a href="#" class="team-social-link"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="team-social-link"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-img-container">
+            <img src="picture/p2.jpg" alt="Michael Reed" class="team-img">
+          </div>
+          <div class="team-content">
+            <h3 class="team-name">Zulhilmi</h3>
+            <p class="team-position">Creative Director</p>
+            <p>With an eye for detail and a background in industrial design, Michael oversees product development and brand aesthetics.</p>
+            <div class="team-social">
+              <a href="#" class="team-social-link"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="team-social-link"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-img-container">
+            <img src="picture/p3.jpg" alt="James Wilson" class="team-img">
+          </div>
+          <div class="team-content">
+            <h3 class="team-name">Thaqif</h3>
+            <p class="team-position">Head of Operations</p>
+            <p>Thaqif ensures that every customer experience is seamless, from online shopping to final delivery.</p>
+            <div class="team-social">
+              <a href="#" class="team-social-link"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="team-social-link"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-img-container">
+            <img src="picture/p4.jpg" alt="James Wilson" class="team-img">
+          </div>
+          <div class="team-content">
+            <h3 class="team-name">Haikal</h3>
+            <p class="team-position">Head of Human Resource</p>
+            <p>Haikal ensures that every employees is satified working with us and continue to work here.</p>
+            <div class="team-social">
+              <a href="#" class="team-social-link"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="team-social-link"><i class="fa fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">MEN'S <span>PRIDE</span></div>
+          <p class="footer-about">Redefining men's accessories with premium quality watches, bracelets, belts, and cufflinks for the modern gentleman.</p>
+          <div class="footer-social">
+            <a href="#" class="team-social-link"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="team-social-link"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="products.html" class="footer-link">Products</a></li>
+            <li><a href="blog.html" class="footer-link">Blog</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-title">Contact Us</h3>
+          <div class="contact-item"><i class="fa fa-map-marker"></i> 123 Fashion Street, Nairobi, Kenya</div>
+          <div class="contact-item"><i class="fa fa-phone"></i> +254 123 456 789</div>
+          <div class="contact-item"><i class="fa fa-envelope-o"></i> info@menspride.com</div>
+          <div class="contact-item"><i style="font-size:15px" class="fa">&#xf017;</i> Mon-Fri: 9am - 6pm</div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 MEN'S PRIDE. All Rights Reserved. | This website is a student project for IML254. Not an official site.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top">&#129145;</a>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const backToTop = document.querySelector(".back-to-top");
+
+    if (backToTop) {
+      window.addEventListener("scroll", () => {
+        backToTop.style.display = window.scrollY > 300 ? "block" : "none";
+      });
+
+      backToTop.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+  });
+</script>
+</body>
+</html>
